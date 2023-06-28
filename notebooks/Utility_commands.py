@@ -29,7 +29,7 @@ def read_from_csv():
 
 user_df = read_file_df()
 user_df.display()
-write_csv = df_write_file(user_df)
+# write_csv = df_write_file(user_df)
 read_from_csv().display()
 
 
@@ -82,6 +82,10 @@ dbutils.widgets.multiselect(name='Skills',defaultValue='computer basics',choices
 dbutils.widgets.text(name='Comments',defaultValue='No comments')
 
 
+dbutils.notebook.exit("Thank you")
+
+
 
 # COMMAND ----------
+
 
