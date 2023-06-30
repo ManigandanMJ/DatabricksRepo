@@ -9,7 +9,7 @@ display(user_df)
 
 # COMMAND ----------
 
-#dbutils data_utilities -  gives summarize of df
+#dbutils data_utilities -gives summarize of df
 dbutils.data.summarize(user_df)
 
 # COMMAND ----------
