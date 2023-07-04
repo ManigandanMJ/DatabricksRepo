@@ -131,3 +131,13 @@ spark.sql("insert into fruits select * from data_delta")
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC delete from fruits where fruit_name = "Cherry"
+
+# COMMAND ----------
+
+#Deleting using instance
+fruit_instance.delete("price > 100")
+
+# COMMAND ----------
+
