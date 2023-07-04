@@ -81,3 +81,26 @@ DeltaTable.createIfNotExists(spark)\
 
 # COMMAND ----------
 
+# create delta table using dataframe method
+student_schema = ["student_id","student_name","class"]
+student_data = [("s1","Amar",5),
+                ("s2","Adhil",6),
+                ("s3","Anil",5)]
+#create dataframe
+student_df = spark.createDataFrame(data = student_data, schema = student_schema)
+display(student_df)
+
+# COMMAND ----------
+
+#using the dataframe creating creating delta table
+student_df.write.format("delta").saveAsTable("student_details")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC /*selecting the student table*/
+# MAGIC SELECT * FROM student_details
+# MAGIC
+
+# COMMAND ----------
+
