@@ -33,6 +33,12 @@ display(df_history)
 
 # COMMAND ----------
 
+df_delta = spark.read.format('delta').option("timestampAsOf","2023-07-05T17:16:19.000+0000")\
+    .load("/FileStore/shared_uploads/manigandan.mj@diggibyte.com/data_folder/store")
+display(df_delta)
+
+# COMMAND ----------
+
 df_delta = spark.read.format('delta').option("timestampAsOf","2023-07-05T17:14:04.000+0000").table("store")
 display(df_delta)
 
