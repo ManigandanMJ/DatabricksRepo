@@ -1,4 +1,4 @@
-# Assignment – 1
+#Assignment
 
 -	Load sample CSV into Databricks and create a Data Frame and write it into bronze layer dbfs path as parquet format. 
 -	Load sample Json into Databricks and create a Data Frame and flatten column projects and write it into bronze layer dbfs path as 
