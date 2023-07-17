@@ -1,4 +1,4 @@
-#Assignment – 1
+#  Assignment – 1
 
 -	Load sample CSV into Databricks and create a Data Frame and write it into bronze layer dbfs path as parquet format. 
 -	Load sample Json into Databricks and create a Data Frame and flatten column projects and write it into bronze layer dbfs path as 
@@ -9,14 +9,3 @@
 -	Now delete the data from the table where id = “31,40,7,15”
 -	Restore the table in a previous version.
 
-
-# Databricks concepts 
-
-    - Practiced on utility commands.
-    - Read, Write and again read the created file.
-    - Dataframes creation and joining.
-    - Mount_point functions.
-    - Notebook utilities.
-    - Parameterize notebook widgets.
-    - widget utilities.
-    - Mount and unmount blob storage in notebooks.
